@@ -1,0 +1,123 @@
+/* Videos Page */
+
+.videos-hero {
+  padding-top: calc(var(--nav-h) + 80px);
+  padding-bottom: 32px;
+}
+
+.videos-hero h1 { margin-bottom: 12px; }
+.videos-hero h1 em { color: var(--accent); }
+
+.videos-hero-sub {
+  font-size: 1rem;
+  color: var(--text-2);
+  max-width: 420px;
+}
+
+.videos-featured h2 {
+  margin-bottom: 28px;
+  font-size: 1.4rem;
+}
+
+.video-embed-large {
+  max-width: 860px;
+}
+
+.video-embed-large .video-placeholder {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: var(--shadow-lg);
+}
+
+.videos-grid-section { background: var(--surface-2); }
+.videos-grid-section h2 { margin-bottom: 12px; font-size: 1.4rem; }
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.video-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.25s var(--ease);
+  cursor: pointer;
+}
+
+.video-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  border-color: transparent;
+}
+
+.video-thumb {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(160deg, #0f0f0f, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.play-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+  transition: all 0.3s;
+}
+
+.video-card:hover .play-icon {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.video-info { padding: 20px; }
+
+.video-info h3 {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.video-meta {
+  font-size: 0.78rem;
+  color: var(--text-3);
+}
+
+.videos-cta { text-align: center; }
+
+@media (max-width: 900px) {
+  .videos-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .videos-grid { grid-template-columns: 1fr; }
+}
