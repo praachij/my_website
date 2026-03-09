@@ -1,4 +1,4 @@
-// Praachi Jain Mehta — 3-Screen Site
+// Praachi Jain Mehta — Editorial Warmth
 
 // Mobile nav
 const navToggle = document.querySelector('.nav-toggle');
@@ -25,12 +25,12 @@ navLinks?.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Nav scroll
+// Nav scroll state
 window.addEventListener('scroll', () => {
   document.querySelector('.nav-header')?.classList.toggle('scrolled', window.scrollY > 10);
 }, { passive: true });
 
-// Scroll reveal
+// Scroll reveal with staggered delays
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -38,16 +38,38 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-// Add reveal class to elements in screen 2 and 3
-document.querySelectorAll('.screen-2-text, .screen-2-video, .award, .cta-content > *, .cta-visual').forEach((el, i) => {
+document.querySelectorAll('.award, .wave-content > *').forEach((el, i) => {
   el.classList.add('reveal');
-  el.style.transitionDelay = `${i * 0.06}s`;
+  el.style.transitionDelay = `${i * 0.07}s`;
   revealObserver.observe(el);
 });
 
-// Active nav
+// Wave section — subtle parallax on headline
+const waveHeadline = document.querySelector('.wave-headline');
+const waveSection = document.querySelector('.screen-3');
+
+if (waveHeadline && waveSection) {
+  window.addEventListener('scroll', () => {
+    const rect = waveSection.getBoundingClientRect();
+    const viewH = window.innerHeight;
+    if (rect.top < viewH && rect.bottom > 0) {
+      const progress = (viewH - rect.top) / (viewH + rect.height);
+      const offset = (progress - 0.5) * 30;
+      waveHeadline.style.transform = `translateY(${offset}px)`;
+    }
+  }, { passive: true });
+}
+
+// Story section — scroll reveal for panels
+document.querySelectorAll('.story-panel, .story-closer, .awards-inline').forEach((el, i) => {
+  el.classList.add('reveal');
+  el.style.transitionDelay = `${i * 0.12}s`;
+  revealObserver.observe(el);
+});
+
+// Active nav highlighting
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
 

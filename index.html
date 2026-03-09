@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -34,10 +35,13 @@
          SCREEN 1 — THE HOOK
          ============================ -->
     <section class="screen screen-1" id="top">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
       <div class="container screen-grid">
         <div class="screen-1-text">
           <div class="hook-questions">
-            <h1>AI is changing the world. Is your career keeping up?</h1>
+            <h1>Finding your path in the age of <em>Intelligence.</em></h1>
             <p class="hook-sub">AI is rewriting the rules of every industry. The skills that got you here won't be enough to get you there. So the real question is: <strong>what's your plan?</strong></p>
           </div>
           <div class="credibility-intro">
@@ -51,15 +55,14 @@
         </div>
         <div class="screen-1-video">
           <div class="video-container">
-            <!-- Replace with: <iframe src="https://www.youtube.com/embed/YOUR_INTRO_VIDEO_ID" title="Praachi Jain Mehta - Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <div class="video-placeholder">
-              <div class="video-placeholder-inner">
+            <a href="https://www.youtube.com/watch?v=R0y1A8QjSIM" target="_blank" rel="noopener" class="video-thumb-link">
+              <img src="https://img.youtube.com/vi/R0y1A8QjSIM/maxresdefault.jpg" alt="Praachi Jain Mehta - Introduction" class="video-thumb-img" />
+              <div class="video-thumb-overlay">
                 <div class="play-btn">
-                  <svg width="18" height="22" viewBox="0 0 18 22" fill="none"><path d="M16 11L2 21V1L16 11Z" fill="white"/></svg>
+                  <svg width="20" height="24" viewBox="0 0 18 22" fill="none"><path d="M16 11L2 21V1L16 11Z" fill="white"/></svg>
                 </div>
-                <span>My Intro Video</span>
               </div>
-            </div>
+            </a>
           </div>
           <p class="video-caption">Watch my 2-minute introduction</p>
         </div>
@@ -70,157 +73,93 @@
          SCREEN 2 — THE STORY + PROOF
          ============================ -->
     <section class="screen screen-2" id="story">
-      <div class="container screen-grid screen-grid-flip">
-        <div class="screen-2-video">
-          <div class="video-container">
-            <!-- Replace with: <iframe src="https://www.youtube.com/embed/YOUR_INTERVIEW_VIDEO_ID" title="Praachi Jain Mehta - Interview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <div class="video-placeholder">
-              <div class="video-placeholder-inner">
-                <div class="play-btn">
-                  <svg width="18" height="22" viewBox="0 0 18 22" fill="none"><path d="M16 11L2 21V1L16 11Z" fill="white"/></svg>
-                </div>
-                <span>Featured Interview</span>
-              </div>
-            </div>
-          </div>
-          <p class="video-caption">An interview from my entrepreneurial journey</p>
-        </div>
-        <div class="screen-2-text">
+      <div class="container">
+        <div class="story-header">
           <div class="label">My Story</div>
           <h2>Built across borders.<br><em>Driven by impact.</em></h2>
-          <p>My journey has taken me across four countries, from India to Japan, Singapore, and now the United States. I studied Economics at Nagoya University and NYU, then earned my Master's in Technopreneurship &amp; Innovation from NTU Singapore. I'm a <strong>professionally certified Global Career Counsellor</strong>, and I've spent years building, advising, and mentoring.</p>
-          <p>Beyond careers, I founded <strong>GEET</strong>, a non-profit dedicated to girls' empowerment through education. My work in impact and leadership earned me the <strong>McKinsey Next Generation Women Leaders Award</strong>. I've been a World Bank Youth Summit delegate, organized education fairs, and built communities that help young people dream bigger.</p>
-          <p class="story-closer">This isn't theory for me. It's lived experience, and I bring all of it to every coaching conversation.</p>
         </div>
-      </div>
 
-      <!-- Awards strip -->
-      <div class="awards-strip">
-        <div class="container">
-          <div class="awards-grid">
-            <div class="award">
-              <div class="award-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <div class="story-dual">
+          <!-- Education -->
+          <div class="story-panel story-edu">
+            <div class="panel-label">Education</div>
+            <div class="edu-logos">
+              <div class="edu-item">
+                <div class="edu-logo-wrap">
+                  <img src="assets/logos/nagoya.svg" alt="Nagoya University" />
+                </div>
+                <span class="edu-country">Japan</span>
               </div>
-              <div>
-                <h4>HP UNESCO Be Changemaker</h4>
-                <span>Top 5 Teams, 2025</span>
+              <div class="edu-item">
+                <div class="edu-logo-wrap">
+                  <img src="assets/logos/nyu.svg" alt="New York University" />
+                </div>
+                <span class="edu-country">United States</span>
               </div>
-            </div>
-            <div class="award">
-              <div class="award-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              </div>
-              <div>
-                <h4>World Bank Youth Summit</h4>
-                <span>Lightning Talk Pitch, 2023</span>
-              </div>
-            </div>
-            <div class="award">
-              <div class="award-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></svg>
-              </div>
-              <div>
-                <h4>SIF YSE Singapore</h4>
-                <span>Top 6 Teams, 2023</span>
-              </div>
-            </div>
-            <div class="award">
-              <div class="award-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-              </div>
-              <div>
-                <h4>McKinsey Next Gen Women Leaders</h4>
-                <span>Leadership Award, 2020</span>
+              <div class="edu-item">
+                <div class="edu-logo-wrap">
+                  <img src="assets/logos/ntu.svg" alt="NTU Singapore" />
+                </div>
+                <span class="edu-country">Singapore</span>
               </div>
             </div>
           </div>
+
+          <!-- Experience -->
+          <div class="story-panel story-exp">
+            <div class="panel-label">Experience</div>
+            <div class="exp-stack">
+              <div class="exp-entry exp-current">
+                <span class="exp-now">Now</span>
+                <h3 class="exp-name">Augment Ventures</h3>
+                <p class="exp-aside">Silicon Valley &middot; Venture Capital</p>
+              </div>
+              <div class="exp-entry">
+                <h3 class="exp-name">EDUGoals</h3>
+                <p class="exp-aside">Founder &middot; 2,000+ mentored globally</p>
+              </div>
+              <div class="exp-entry">
+                <h3 class="exp-name">GEET</h3>
+                <p class="exp-aside">Girls' empowerment through education</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="story-closer">Every conversation I have is shaped by where I've been.</p>
+
+        <div class="awards-inline">
+          <div class="award-pill"><span>HP UNESCO ChangeMaker &mdash; Top 5</span></div>
+          <div class="award-pill"><span>World Bank Youth Summit</span></div>
+          <div class="award-pill"><span>SIF YSE Singapore &mdash; Top 6</span></div>
+          <div class="award-pill"><span>McKinsey Next Gen Women Leaders</span></div>
         </div>
       </div>
     </section>
 
     <!-- ============================
-         SCREEN 3 — THE CTA
+         WAVE TRANSITION
+         ============================ -->
+    <div class="wave-transition" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z" fill="rgba(9,31,26,0.15)"/></svg>
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,80 C320,35 640,95 960,50 C1120,28 1320,75 1440,55 L1440,120 L0,120 Z" fill="rgba(9,31,26,0.4)"/></svg>
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,85 C180,105 420,40 720,75 C1020,110 1300,50 1440,80 L1440,120 L0,120 Z" fill="#091F1A"/></svg>
+    </div>
+
+    <!-- ============================
+         SCREEN 3 — THE WAVE
          ============================ -->
     <section class="screen screen-3" id="book">
-      <div class="container">
-        <div class="cta-layout">
-          <div class="cta-content">
-            <div class="label label-light">Work With Me</div>
-            <h2>30 minutes that could<br><em>change your trajectory.</em></h2>
-            <p class="cta-desc">Book a free one-on-one session with me. No fluff, no sales pitch, just a real conversation about where you are and where you want to go.</p>
+      <div class="wave-orb wave-orb-1"></div>
+      <div class="wave-orb wave-orb-2"></div>
+      <div class="wave-orb wave-orb-3"></div>
 
-            <div class="what-you-get">
-              <h3>What you'll get</h3>
-              <div class="benefit-list">
-                <div class="benefit">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                  <span>A personalized <strong>roadmap</strong> for your next career move</span>
-                </div>
-                <div class="benefit">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                  <span>Clarity on how to <strong>upskill</strong> for the AI-driven economy</span>
-                </div>
-                <div class="benefit">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                  <span>Confidence to <strong>ride the AI wave</strong>, not be swept by it</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="who-is-this-for">
-              <h3>This is for you if you're</h3>
-              <div class="audience-tags">
-                <span class="tag">Students</span>
-                <span class="tag">First-jobbers</span>
-                <span class="tag">Career switchers</span>
-                <span class="tag">Upskilling for AI</span>
-              </div>
-            </div>
-
-            <a href="#" class="btn btn-book">
-              Book Your Free 30-Min Session
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-            <p class="book-note">Free. No commitment. Just a conversation.</p>
-          </div>
-
-          <div class="cta-visual">
-            <div class="wave-graphic">
-              <div class="wave-paths">
-                <div class="wave-path">
-                  <div class="wave-label">Without guidance</div>
-                  <div class="wave-animation wave-chaotic">
-                    <svg viewBox="0 0 300 120" preserveAspectRatio="none">
-                      <!-- Chaotic downward path -->
-                      <path class="wave-path-line" d="M0 30 Q25 10, 50 45 Q75 80, 100 25 Q125 -5, 150 55 Q175 95, 200 40 Q225 5, 250 70 Q275 110, 300 95"/>
-                      <!-- Figure being submerged -->
-                      <circle class="wave-figure" cx="270" cy="90" r="8"/>
-                      <line class="wave-figure" x1="270" y1="98" x2="270" y2="115" stroke="#c45555" stroke-width="2" opacity="0.5"/>
-                    </svg>
-                  </div>
-                  <span class="wave-outcome">Uncertainty. Anxiety. Stagnation.</span>
-                </div>
-                <div class="wave-path">
-                  <div class="wave-label wave-label-good">With coaching</div>
-                  <div class="wave-animation wave-smooth">
-                    <svg viewBox="0 0 300 120" preserveAspectRatio="none">
-                      <!-- Smooth upward path -->
-                      <path class="wave-path-line" d="M0 95 Q40 90, 80 80 Q120 65, 160 50 Q200 35, 240 22 Q270 14, 300 10"/>
-                      <!-- Figure riding upward -->
-                      <circle class="wave-figure" cx="270" cy="18" r="8"/>
-                      <line class="wave-figure" x1="270" y1="26" x2="270" y2="43" stroke="#8BC4A9" stroke-width="2" opacity="0.8"/>
-                    </svg>
-                  </div>
-                  <span class="wave-outcome wave-outcome-good">Clarity. Confidence. Growth.</span>
-                </div>
-              </div>
-            </div>
-            <div class="thrive-message">
-              <p>Don't just survive the AI revolution.<br><strong>Thrive in it.</strong></p>
-            </div>
-          </div>
-        </div>
+      <div class="container wave-content">
+        <h2 class="wave-headline">The AI wave is here.</h2>
+        <div class="wave-accent"></div>
+        <p class="wave-subline">Learn to ride it.</p>
+        <a href="mailto:praachij@gmail.com" class="wave-cta">Book a free session <span class="wave-cta-arrow">&rarr;</span></a>
+        <p class="wave-note">30 minutes. No commitment. Just a conversation.</p>
       </div>
     </section>
 
@@ -229,27 +168,22 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-speaking">
-        <p class="footer-speaking-intro">Invite me to speak at your school, institute, office, or organization</p>
+        <p class="footer-speaking-intro">Reach out to me on <a href="mailto:praachij@gmail.com" class="footer-email-link">praachij@gmail.com</a> to host a workshop or a webinar on the following themes</p>
         <div class="speaking-topics">
           <span class="speaking-topic">Career Reinvention in the AI Era</span>
           <span class="speaking-topic">Empowering Students for an AI-First World</span>
           <span class="speaking-topic">Future-Proofing Your Workforce</span>
         </div>
-        <a href="mailto:pracheej@gmail.com" class="footer-reach-out">Reach out &rarr;</a>
       </div>
       <div class="footer-contact">
         <div class="footer-contact-inner">
-          <a href="https://www.linkedin.com/in/praachijain/" target="_blank" class="footer-link">
+          <a href="https://www.linkedin.com/in/praachijain/" target="_blank" class="footer-social-link">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
           </a>
-          <a href="https://www.youtube.com/@praachijainmehta" target="_blank" class="footer-link">
+          <a href="https://www.youtube.com/@praachijainmehta" target="_blank" class="footer-social-link">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             YouTube
-          </a>
-          <a href="mailto:pracheej@gmail.com" class="footer-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            pracheej@gmail.com
           </a>
           <span class="footer-copy">&copy; 2026 Praachi Jain Mehta</span>
         </div>
