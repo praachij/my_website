@@ -1,14 +1,14 @@
 :root {
-  --ink: #0f1c33;
-  --ink-soft: #445267;
-  --ink-faint: #6c7788;
-  --line: #e4ddcf;
-  --wash: #f1ece1;
+  --ink: #162622;
+  --ink-soft: #3f524d;
+  --ink-faint: #667873;
+  --line: #e2ddd2;
+  --wash: #efece3;
   --paper: #f8f5ee;
   --surface: #fffdf9;
-  --navy: #002d72;
-  --link: #1a55b4;
-  --sky: #68ace5;
+  --navy: #0b5d4b;
+  --link: #0e7c66;
+  --sky: #4ea390;
   --display: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
   --text: "Source Serif 4", "Iowan Old Style", Georgia, serif;
   --page: 1040px;
@@ -72,7 +72,7 @@ button:focus-visible {
 }
 
 ::selection {
-  background: rgba(104, 172, 229, 0.35);
+  background: rgba(14, 124, 102, 0.22);
 }
 
 .container {
@@ -100,10 +100,14 @@ button:focus-visible {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   min-height: 3.25rem;
+}
+
+.navbar.has-brand {
+  justify-content: space-between;
 }
 
 .navbar-brand {
@@ -315,12 +319,12 @@ main.container {
   inset: 0;
   display: grid;
   place-items: center;
-  background: rgba(15, 28, 51, 0.22);
+  background: rgba(22, 38, 34, 0.22);
   transition: background 0.2s ease;
 }
 
 .profile-card:hover .profile-play {
-  background: rgba(0, 45, 114, 0.32);
+  background: rgba(11, 93, 75, 0.32);
 }
 
 .play-circle {
