@@ -577,8 +577,17 @@ main.container {
 }
 
 .chip-logo img.logo-augment {
-  height: 38px;
-  max-width: 180px;
+  height: 40px;
+  max-width: 185px;
+}
+
+#experience .chip-logo {
+  height: 66px;
+}
+
+.chip-logo img.logo-geet {
+  height: 64px;
+  max-width: 120px;
 }
 
 .chip-logo img.logo-ntu {
