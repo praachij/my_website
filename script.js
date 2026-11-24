@@ -73,9 +73,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   chips.forEach(function (chip) {
     var trigger = chip.querySelector(".chip-trigger");
+    var pop = chip.querySelector(".exp-pop");
     var closeBtn = chip.querySelector(".exp-close");
+    var leaveTimer = null;
+
+    function cancelClose() {
+      clearTimeout(leaveTimer);
+    }
+
+    function scheduleClose() {
+      if (!canHover) return;
+      clearTimeout(leaveTimer);
+      leaveTimer = setTimeout(function () {
+        if (chip.classList.contains("open") && openedByHover === chip) {
+          closeChip(chip);
+          openedByHover = null;
+        }
+      }, 220);
+    }
 
     trigger.addEventListener("mouseenter", function () {
+      cancelClose();
       if (canHover && !chip.classList.contains("open")) {
         clearTimeout(hoverTimer);
         hoverTimer = setTimeout(function () {
@@ -87,11 +105,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     trigger.addEventListener("mouseleave", function () {
       clearTimeout(hoverTimer);
-      if (openedByHover === chip) openedByHover = null;
+      scheduleClose();
     });
+
+    if (pop) {
+      pop.addEventListener("mouseenter", cancelClose);
+      pop.addEventListener("mouseleave", scheduleClose);
+    }
 
     trigger.addEventListener("click", function () {
       clearTimeout(hoverTimer);
+      cancelClose();
       if (chip.classList.contains("open") && openedByHover !== chip) {
         closeChip(chip);
       } else {
@@ -102,7 +126,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (closeBtn) {
       closeBtn.addEventListener("click", function () {
+        cancelClose();
         closeChip(chip);
+        openedByHover = null;
         trigger.focus({ preventScroll: true });
       });
     }
