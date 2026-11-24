@@ -112,6 +112,17 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.key === "Escape") chips.forEach(closeChip);
   });
 
+  // Initiative cards jump to and expand their linked experience card
+  document.querySelectorAll("[data-open-place]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var target = document.querySelector('.logo-chip[data-place="' + btn.dataset.openPlace + '"]');
+      if (!target) return;
+      openChip(target);
+      var section = target.closest(".home-section");
+      if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
   // Gentle first-view hop nudge on the logo chips
   var groups = document.querySelector(".exp-groups");
   if (groups && !reducedMotion && "IntersectionObserver" in window) {

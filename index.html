@@ -43,26 +43,13 @@
     <section class="hero">
       <header class="hero-head">
         <h1 class="hero-name reveal">Praachi Jain Mehta</h1>
-        <ul class="affiliations reveal">
-          <li class="affiliation">
-            <img src="assets/logos/augment-mark.png" alt="Augment Ventures" />
-            <span>
-              <span class="aff-role">Chief of Staff</span>
-              <span class="aff-name">Augment Ventures</span>
-            </span>
-          </li>
-          <li class="affiliation">
-            <img src="assets/logos/geet.svg" alt="GEET" style="height: 28px;" />
-            <span>
-              <span class="aff-role">Founder</span>
-              <span class="aff-name">GEET Nonprofit</span>
-            </span>
-          </li>
-          <li class="hero-place">
+        <div class="hero-subline reveal">
+          <span class="hero-tagline">Partnerships, Community &amp; Strategy</span>
+          <span class="hero-place">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             Washington, DC Area
-          </li>
-        </ul>
+          </span>
+        </div>
       </header>
 
       <aside class="hero-side reveal">
@@ -103,17 +90,6 @@
       <div class="hero-body">
         <div class="intro-text reveal">
           <p>I am an entrepreneurial operator and 2x founder with 7+ years of experience building 0-to-1 initiatives across venture capital, education, and social impact. Working across the US, Singapore, Japan, and India, I focus on strategic partnerships, founder communities, and AI-forward operating workflows. I am also an Erickson International Certified Coach (ICF ACC in progress).</p>
-        </div>
-
-        <div class="featured-projects reveal">
-          <a href="https://www.edugoals.ai" class="featured-project-card" target="_blank" rel="noopener noreferrer">
-            <div class="card-title">EduGoals<span class="light">.ai</span></div>
-            <div class="card-desc">AI learning platform delivering academic lessons to 500+ high school girls in rural India</div>
-          </a>
-          <a href="https://www.youtube.com/playlist?list=PLHCgxdeYh8mGq0u-07dSfwfTYwrtmv_bL" class="featured-project-card" target="_blank" rel="noopener noreferrer">
-            <div class="card-title">EDUSeries<span class="light"> on YouTube</span></div>
-            <div class="card-desc">Weekly webinar series that grew a 1,500+ student and parent community</div>
-          </a>
         </div>
       </div>
     </section>
@@ -218,6 +194,20 @@
 
           </div>
         </div>
+
+        <div class="exp-group reveal">
+          <p class="group-label">Initiatives</p>
+          <div class="initiatives-row">
+            <button type="button" class="featured-project-card is-button" data-open-place="geet">
+              <div class="card-title">EduGoals<span class="light">.ai</span></div>
+              <div class="card-desc">Built under GEET: AI learning platform delivering academic lessons to 500+ high school girls in rural India</div>
+            </button>
+            <button type="button" class="featured-project-card is-button" data-open-place="edugoals">
+              <div class="card-title">EDUSeries<span class="light"> on YouTube</span></div>
+              <div class="card-desc">Built under EDUGoals: weekly webinar series that grew a 1,500+ student and parent community</div>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -227,6 +217,10 @@
     <section class="home-section" id="education">
       <div class="section-head reveal">
         <h2 class="section-heading">Education</h2>
+        <p class="section-note">
+          <span class="on-hover">Hover or click a logo to read more</span>
+          <span class="on-touch">Tap a logo to read more</span>
+        </p>
       </div>
 
       <div class="exp-groups">
@@ -236,7 +230,7 @@
 
             <div class="logo-chip" data-place="ntu" style="--i: 3">
               <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-ntu">
-                <span class="chip-logo"><img src="assets/logos/ntu.svg" alt="Nanyang Technological University" /></span>
+                <span class="chip-logo"><img src="assets/logos/ntu.png" alt="Nanyang Technological University" class="logo-ntu" /></span>
                 <span class="chip-label">MSc Technopreneurship</span>
               </button>
               <div class="exp-pop" id="exp-ntu" role="region" aria-label="Nanyang Technological University">
@@ -313,6 +307,10 @@
     <section class="home-section" id="recognition">
       <div class="section-head reveal">
         <h2 class="section-heading">Recognition</h2>
+        <p class="section-note">
+          <span class="on-hover">Hover or click a logo to read more</span>
+          <span class="on-touch">Tap a logo to read more</span>
+        </p>
       </div>
 
       <div class="exp-groups">
@@ -322,7 +320,7 @@
 
             <div class="logo-chip" data-place="mckinsey" style="--i: 6">
               <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-mckinsey">
-                <span class="chip-logo"><img src="assets/logos/mckinsey.svg" alt="McKinsey Next Generation Women Leaders" /></span>
+                <span class="chip-logo"><img src="assets/logos/mckinsey.svg" alt="McKinsey Next Generation Women Leaders" class="logo-mckinsey" /></span>
                 <span class="chip-label">NGWL Awardee</span>
               </button>
               <div class="exp-pop" id="exp-mckinsey" role="region" aria-label="McKinsey Next Generation Women Leaders">
@@ -344,7 +342,7 @@
 
             <div class="logo-chip" data-place="bcm" style="--i: 7">
               <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-bcm">
-                <span class="chip-logo"><img src="assets/logos/bcm.png" alt="HP UNESCO BeChangeMaker" /></span>
+                <span class="chip-logo"><img src="assets/logos/bcm.png" alt="HP UNESCO BeChangeMaker" class="logo-bcm" /></span>
                 <span class="chip-label">BeChangeMaker Top 5</span>
               </button>
               <div class="exp-pop" id="exp-bcm" role="region" aria-label="HP UNESCO BeChangeMaker">
@@ -366,7 +364,7 @@
 
             <div class="logo-chip" data-place="worldbank" style="--i: 8">
               <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-worldbank">
-                <span class="chip-logo"><img src="assets/logos/worldbank.svg" alt="World Bank Youth Summit" /></span>
+                <span class="chip-logo"><img src="assets/logos/worldbank.svg" alt="World Bank Youth Summit" class="logo-worldbank" /></span>
                 <span class="chip-label">Lightning Talk</span>
               </button>
               <div class="exp-pop" id="exp-worldbank" role="region" aria-label="World Bank Youth Summit">

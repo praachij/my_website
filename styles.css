@@ -263,11 +263,27 @@ main.container {
   color: var(--ink);
 }
 
+.hero-subline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1.25rem;
+  margin: 0.9rem 0 0;
+  font-family: var(--display);
+}
+
+.hero-tagline {
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
 .hero-place {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--ink-faint);
 }
 
@@ -544,24 +560,58 @@ main.container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 42px;
+  height: 52px;
 }
 
 .chip-logo img {
   display: block;
-  height: 36px;
+  height: 40px;
   width: auto;
-  max-width: 150px;
+  max-width: 170px;
   object-fit: contain;
   mix-blend-mode: multiply;
 }
 
-.chip-logo img.logo-bni {
-  height: 28px;
+.chip-logo img.logo-augment {
+  height: 38px;
+  max-width: 180px;
 }
 
-.chip-logo img.logo-augment {
-  height: 34px;
+.chip-logo img.logo-ntu {
+  height: 52px;
+  max-width: 220px;
+}
+
+#recognition .chip-logo {
+  height: 70px;
+}
+
+.chip-logo img.logo-bcm {
+  height: 68px;
+  max-width: 160px;
+}
+
+.chip-logo img.logo-mckinsey {
+  height: 42px;
+  max-width: 190px;
+}
+
+.chip-logo img.logo-worldbank {
+  height: 42px;
+  max-width: 190px;
+}
+
+.initiatives-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.featured-project-card.is-button {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
 }
 
 .chip-wordmark {
@@ -1150,6 +1200,7 @@ main.container {
   }
 
   .featured-projects,
+  .initiatives-row,
   .videos-grid {
     grid-template-columns: 1fr;
   }
