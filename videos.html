@@ -3,155 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Videos — Praachi Jain Mehta</title>
-  <meta name="description" content="Watch videos by Praachi Jain Mehta on career coaching, student counselling, and youth mentorship." />
+  <title>Videos | Praachi Jain Mehta</title>
+  <meta name="description" content="Watch videos by Praachi Jain Mehta on career coaching, mentorship, and navigating work in the AI era." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&display=swap" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="videos.css" />
 </head>
 <body>
 
-  <header class="nav-header">
-    <nav class="nav container">
-      <a href="index.html" class="nav-logo">Praachi<span class="nav-logo-dot"></span></a>
-      <button class="nav-toggle" aria-label="Toggle menu">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary">
+      <a href="index.html" class="navbar-brand">Praachi Jain Mehta</a>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#achievements">Journey</a></li>
-        <li><a href="index.html#blog">Blog</a></li>
-        <li><a href="videos.html" class="active">Videos</a></li>
-        <li><a href="index.html#contact" class="nav-cta">Get in Touch</a></li>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link" href="index.html#top">About</a></li>
+        <li><a class="nav-link" href="index.html#experience">Experience</a></li>
+        <li><a class="nav-link" href="index.html#education">Education</a></li>
+        <li><a class="nav-link" href="index.html#recognition">Recognition</a></li>
+        <li><a class="nav-link active" href="videos.html">Videos</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="videos-hero">
-      <div class="container">
-        <div class="section-label">Videos</div>
-        <h1>Watch &amp; <em>Learn</em></h1>
-        <p class="videos-hero-sub">Career insights, mentorship moments, and practical guidance.</p>
+  <main class="container">
+    <header class="page-header">
+      <h1 class="page-title">Videos &amp; Talks</h1>
+      <p class="page-desc">Career insights, mentorship reflections, and practical guidance for navigating an AI-first world.</p>
+    </header>
+
+    <section class="home-section">
+      <h2 class="section-heading">Featured</h2>
+      <div class="video-featured-card">
+        <a href="https://www.youtube.com/watch?v=tFzrP8SECU4" target="_blank" rel="noopener noreferrer" class="profile-card">
+          <img src="https://img.youtube.com/vi/tFzrP8SECU4/maxresdefault.jpg" alt="Praachi Jain Mehta 2-minute introduction" />
+          <span class="profile-play">
+            <span class="play-circle">
+              <svg width="16" height="18" viewBox="0 0 18 22" fill="none" aria-hidden="true"><path d="M16 11L2 21V1L16 11Z" fill="currentColor"/></svg>
+            </span>
+          </span>
+        </a>
+        <div>
+          <h3 style="margin: 0 0 0.5rem; font-size: 1.25rem; color: var(--navy);">2-Minute Introduction</h3>
+          <p style="margin: 0 0 1rem; color: var(--ink-soft);">My journey across venture capital, entrepreneurship, and coaching, and why helping people find clarity in the age of AI drives my work.</p>
+          <a href="https://www.youtube.com/watch?v=tFzrP8SECU4" target="_blank" rel="noopener noreferrer" class="card-action">Watch on YouTube &rarr;</a>
+        </div>
       </div>
     </section>
 
-    <section class="videos-featured section">
-      <div class="container">
-        <h2>Featured</h2>
-        <div class="video-embed-large">
-          <div class="video-placeholder">
-            <div class="video-placeholder-inner">
-              <div class="play-btn">
-                <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M18 12L2 23V1L18 12Z" fill="white"/></svg>
-              </div>
-              <p class="video-placeholder-text">Featured Video</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="videos-grid-section section">
-      <div class="container">
-        <h2>More Videos</h2>
-        <p class="section-sub">Browse my latest content on career development, student life, and personal growth.</p>
-        <div class="videos-grid">
-          <div class="video-card">
-            <div class="video-thumb">
-              <div class="play-icon">
-                <svg width="16" height="18" viewBox="0 0 16 18" fill="none"><path d="M14 9L2 17V1L14 9Z" fill="white"/></svg>
-              </div>
-              <span class="video-duration">12:34</span>
-            </div>
-            <div class="video-info">
-              <h3>How to Build a Career You Love</h3>
-              <p class="video-meta">2.4K views &middot; 2 weeks ago</p>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="video-thumb">
-              <div class="play-icon">
-                <svg width="16" height="18" viewBox="0 0 16 18" fill="none"><path d="M14 9L2 17V1L14 9Z" fill="white"/></svg>
-              </div>
-              <span class="video-duration">8:21</span>
-            </div>
-            <div class="video-info">
-              <h3>Top 5 Mistakes Students Make When Choosing a Major</h3>
-              <p class="video-meta">1.8K views &middot; 1 month ago</p>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="video-thumb">
-              <div class="play-icon">
-                <svg width="16" height="18" viewBox="0 0 16 18" fill="none"><path d="M14 9L2 17V1L14 9Z" fill="white"/></svg>
-              </div>
-              <span class="video-duration">15:07</span>
-            </div>
-            <div class="video-info">
-              <h3>Interview Tips That Actually Work</h3>
-              <p class="video-meta">3.1K views &middot; 1 month ago</p>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="video-thumb">
-              <div class="play-icon">
-                <svg width="16" height="18" viewBox="0 0 16 18" fill="none"><path d="M14 9L2 17V1L14 9Z" fill="white"/></svg>
-              </div>
-              <span class="video-duration">10:45</span>
-            </div>
-            <div class="video-info">
-              <h3>Finding Your Purpose in Your 20s</h3>
-              <p class="video-meta">5.2K views &middot; 2 months ago</p>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="video-thumb">
-              <div class="play-icon">
-                <svg width="16" height="18" viewBox="0 0 16 18" fill="none"><path d="M14 9L2 17V1L14 9Z" fill="white"/></svg>
-              </div>
-              <span class="video-duration">6:50</span>
-            </div>
-            <div class="video-info">
-              <h3>Why Every Student Needs a Mentor</h3>
-              <p class="video-meta">1.2K views &middot; 3 months ago</p>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="video-thumb">
-              <div class="play-icon">
-                <svg width="16" height="18" viewBox="0 0 16 18" fill="none"><path d="M14 9L2 17V1L14 9Z" fill="white"/></svg>
-              </div>
-              <span class="video-duration">9:18</span>
-            </div>
-            <div class="video-info">
-              <h3>How to Write a Resume That Stands Out</h3>
-              <p class="video-meta">4.0K views &middot; 3 months ago</p>
-            </div>
-          </div>
-        </div>
-        <div class="videos-cta">
-          <a href="#" class="btn btn-secondary" target="_blank">Visit YouTube Channel</a>
-        </div>
-      </div>
+    <section class="home-section">
+      <h2 class="section-heading">Channel</h2>
+      <p style="margin: 0 0 1.25rem; color: var(--ink-soft); max-width: 60ch;">Explore more videos on career development, university admissions, and personal growth on my YouTube channel.</p>
+      <a href="https://www.youtube.com/@praachijainmehta" target="_blank" rel="noopener noreferrer" class="card-action secondary">Visit @praachijainmehta on YouTube &rarr;</a>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
-      <a href="index.html" class="footer-name">Praachi Jain Mehta</a>
-      <nav class="footer-nav">
-        <a href="index.html#about">About</a>
-        <a href="index.html#services">Services</a>
-        <a href="index.html#blog">Blog</a>
-        <a href="videos.html">Videos</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-      <p class="footer-copy">2026 Praachi Jain Mehta</p>
+      <span class="footer-quote">Think clearly about your path, lead with conviction, and build what matters next.</span>
+      <span class="footer-links">
+        <a href="mailto:praachij@gmail.com" title="Email" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/praachijain/" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@praachijainmehta" title="YouTube" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </span>
     </div>
   </footer>
 

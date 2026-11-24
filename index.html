@@ -3,209 +3,410 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Praachi Jain Mehta — Career Coach for the AI Era</title>
-  <meta name="description" content="Navigate your career in the age of AI with Praachi Jain Mehta — education entrepreneur, VC professional, and certified career counsellor who has mentored 2,000+ individuals globally." />
+  <title>Praachi Jain Mehta</title>
+  <meta name="description" content="Praachi Jain Mehta: Partnerships, Community, and Strategy. Chief of Staff at Augment Ventures, Founder of GEET and EDUGoals." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&display=swap" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    document.documentElement.classList.add("reveal-on");
+    setTimeout(function () {
+      if (!window.revealReady) document.documentElement.classList.remove("reveal-on");
+    }, 3000);
+  </script>
 </head>
-<body>
+<body class="home">
 
-  <!-- NAV -->
-  <header class="nav-header">
-    <nav class="nav container">
-      <a href="#top" class="nav-logo">Praachi Jain Mehta</a>
-      <button class="nav-toggle" aria-label="Toggle menu">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary">
+      <a href="index.html" class="navbar-brand">Praachi Jain Mehta</a>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="#story">My Story</a></li>
-        <li><a href="#book">Work With Me</a></li>
-        <li><a href="videos.html" target="_blank">Videos</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeqsI1JNlawFv8chNrwUb2-8ptihV5TGGa5RCyUJogeMoAKBw/viewform?usp=header" target="_blank" rel="noopener" class="nav-cta">Book a Session</a></li>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link active" href="#top">About</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#recognition">Recognition</a></li>
+        <li><a class="nav-link" href="videos.html">Videos</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="container" id="top">
 
     <!-- ============================
-         SCREEN 1 — THE HOOK
+         HERO
          ============================ -->
-    <section class="screen screen-1" id="top">
-      <div class="hero-orb hero-orb-1"></div>
-      <div class="hero-orb hero-orb-2"></div>
-      <div class="hero-orb hero-orb-3"></div>
-      <div class="container screen-grid">
-        <div class="screen-1-text">
-          <div class="hook-questions">
-            <h1>Finding your path in the age of <em>Intelligence.</em></h1>
-            <p class="hook-sub">AI is rewriting the rules of every industry.<br>The skills that brought you here may not be enough to take you where the future is headed. The real question is: <strong>how do you stay prepared, adaptable, and ahead of the curve?</strong></p>
-          </div>
-          <div class="credibility-intro">
-            <p>I'm <strong>Praachi Jain Mehta</strong>, and helping people navigate exactly this is the work that drives me. <strong>Coaching is at the heart of what I do.</strong> As an education entrepreneur, I've mentored and counselled more than 2,000 students and professionals globally through my first venture in education consulting. Today, I also work with a Silicon Valley venture capital firm investing in AI startups across the United States, giving me a front row view of how technology is reshaping careers, industries, and the future of work.</p>
-            <p class="cred-mission">My mission is simple: to help individuals think clearly about their path, develop the skills that matter, and unlock their fullest potential in a world that is evolving faster than ever.</p>
-          </div>
-          <div class="screen-1-cta">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqsI1JNlawFv8chNrwUb2-8ptihV5TGGa5RCyUJogeMoAKBw/viewform?usp=header" target="_blank" rel="noopener" class="btn btn-primary">Book a Free Session</a>
-            <a href="#story" class="btn btn-ghost">Learn More About Me</a>
-          </div>
+    <section class="hero">
+      <header class="hero-head">
+        <h1 class="hero-name reveal">Praachi Jain Mehta</h1>
+        <ul class="affiliations reveal">
+          <li class="affiliation">
+            <img src="assets/logos/augment-mark.png" alt="Augment Ventures" />
+            <span>
+              <span class="aff-role">Chief of Staff</span>
+              <span class="aff-name">Augment Ventures</span>
+            </span>
+          </li>
+          <li class="affiliation">
+            <img src="assets/logos/geet.svg" alt="GEET" style="height: 28px;" />
+            <span>
+              <span class="aff-role">Founder</span>
+              <span class="aff-name">GEET Nonprofit</span>
+            </span>
+          </li>
+          <li class="hero-place">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Washington, DC Area
+          </li>
+        </ul>
+      </header>
+
+      <aside class="hero-side reveal">
+        <div>
+          <a href="https://www.youtube.com/watch?v=tFzrP8SECU4" target="_blank" rel="noopener noreferrer" class="profile-card" aria-label="Watch 2-minute introduction video">
+            <img src="https://img.youtube.com/vi/tFzrP8SECU4/maxresdefault.jpg" alt="Praachi Jain Mehta introduction video" />
+            <span class="profile-play">
+              <span class="play-circle">
+                <svg width="16" height="18" viewBox="0 0 18 22" fill="none" aria-hidden="true"><path d="M16 11L2 21V1L16 11Z" fill="currentColor"/></svg>
+              </span>
+            </span>
+          </a>
+          <span class="profile-caption">2-minute introduction</span>
         </div>
-        <div class="screen-1-video">
-          <div class="video-container">
-            <a href="https://www.youtube.com/watch?v=tFzrP8SECU4" target="_blank" rel="noopener" class="video-thumb-link">
-              <img src="https://img.youtube.com/vi/tFzrP8SECU4/maxresdefault.jpg" alt="Praachi Jain Mehta - Introduction" class="video-thumb-img" />
-              <div class="video-thumb-overlay">
-                <div class="play-btn">
-                  <svg width="20" height="24" viewBox="0 0 18 22" fill="none"><path d="M16 11L2 21V1L16 11Z" fill="white"/></svg>
-                </div>
-              </div>
+
+        <ul class="hero-links">
+          <li>
+            <a href="mailto:praachij@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Email
             </a>
-          </div>
-          <p class="video-caption">Watch my 2-minute introduction</p>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/praachijain/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@praachijainmehta" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              YouTube
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="hero-body">
+        <div class="intro-text reveal">
+          <p>I am an entrepreneurial operator and 2x founder with 7+ years of experience building 0-to-1 initiatives across venture capital, education, and social impact. Working across the US, Singapore, Japan, and India, I focus on strategic partnerships, founder communities, and AI-forward operating workflows. I am also an Erickson International Certified Coach (ICF ACC in progress).</p>
+        </div>
+
+        <div class="featured-projects reveal">
+          <a href="https://www.edugoals.ai" class="featured-project-card" target="_blank" rel="noopener noreferrer">
+            <div class="card-title">EduGoals<span class="light">.ai</span></div>
+            <div class="card-desc">AI learning platform delivering academic lessons to 500+ high school girls in rural India</div>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLHCgxdeYh8mGq0u-07dSfwfTYwrtmv_bL" class="featured-project-card" target="_blank" rel="noopener noreferrer">
+            <div class="card-title">EDUSeries<span class="light"> on YouTube</span></div>
+            <div class="card-desc">Weekly webinar series that grew a 1,500+ student and parent community</div>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- ============================
-         SCREEN 2 — THE STORY + PROOF
+         WORK EXPERIENCE (FIRST FOLD)
          ============================ -->
-    <section class="screen screen-2" id="story">
-      <div class="container">
-        <div class="story-header">
-          <div class="label">My Story</div>
-          <h2>The journey so far.</h2>
-        </div>
+    <section class="home-section work-first-fold" id="experience">
+      <div class="section-head reveal">
+        <h2 class="section-heading">Experience</h2>
+        <p class="section-note">
+          <span class="on-hover">Hover or click a logo to read more</span>
+          <span class="on-touch">Tap a logo to read more</span>
+        </p>
+      </div>
 
-        <div class="story-dual">
-          <!-- Education -->
-          <div class="story-panel story-edu">
-            <div class="panel-label">Education</div>
-            <div class="edu-logos">
-              <div class="edu-item">
-                <div class="edu-logo-wrap">
-                  <img src="assets/logos/nagoya.svg" alt="Nagoya University" />
+      <div class="exp-groups">
+        <div class="exp-group reveal">
+          <p class="group-label">Work</p>
+          <div class="logo-row cols-3">
+
+            <div class="logo-chip" data-place="augment" style="--i: 0">
+              <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-augment">
+                <span class="chip-logo"><img src="assets/logos/augment.png" alt="Augment Ventures" class="logo-augment" /></span>
+                <span class="chip-label">Chief of Staff</span>
+              </button>
+              <div class="exp-pop" id="exp-augment" role="region" aria-label="Augment Ventures">
+                <div class="exp-clip">
+                  <div class="exp-card">
+                    <button type="button" class="exp-close" aria-label="Close">&times;</button>
+                    <div>
+                      <p class="exp-org">Augment Ventures</p>
+                      <p class="exp-role">Chief of Staff</p>
+                      <p class="exp-meta">Nov 2023 &ndash; Present</p>
+                      <span class="exp-badge-note">30 Portfolio Companies</span>
+                    </div>
+                    <div>
+                      <ul class="exp-bullets" style="margin-top: 0;">
+                        <li><strong>Partnerships:</strong> Built partnerships across universities, accelerators, and industry bodies and launched a 0-to-1 corporate sponsorship program; led 2 annual flagship events (100+ in-person attendees), the Women Funders &amp; Founders Forum and Founder-Funder Mixers, supporting CXO teams across 30 portfolio companies.</li>
+                        <li><strong>Fundraising Workflows:</strong> Right-hand to the Founding Fund Manager, developing AI workflows to manage 1,000+ prospective investors across outreach and ongoing engagement.</li>
+                        <li><strong>Community Growth:</strong> Led founder-investor programming, podcasts, and thought leadership, growing a LinkedIn and digital community of 2,000+ members.</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <span class="edu-country">Japan</span>
-              </div>
-              <div class="edu-item">
-                <div class="edu-logo-wrap">
-                  <img src="assets/logos/nyu.svg" alt="New York University" />
-                </div>
-                <span class="edu-country">United States</span>
-              </div>
-              <div class="edu-item">
-                <div class="edu-logo-wrap">
-                  <img src="assets/logos/ntu.svg" alt="NTU Singapore" />
-                </div>
-                <span class="edu-country">Singapore</span>
               </div>
             </div>
-          </div>
 
-          <!-- Experience -->
-          <div class="story-panel story-exp">
-            <div class="panel-label">Experience</div>
-            <div class="exp-stack">
-              <div class="exp-entry exp-current">
-                <span class="exp-now">Now</span>
-                <h3 class="exp-name">Augment Ventures</h3>
-                <p class="exp-aside">Silicon Valley &middot; Venture Capital</p>
-              </div>
-              <div class="exp-entry">
-                <h3 class="exp-name">EDUGoals</h3>
-                <p class="exp-aside">Founder &middot; 2,000+ mentored globally</p>
-              </div>
-              <div class="exp-entry">
-                <h3 class="exp-name">GEET</h3>
-                <p class="exp-aside"><strong>G</strong>irls <strong>E</strong>mpowerment through <strong>E</strong>ducation <strong>T</strong>ransformation</p>
+            <div class="logo-chip" data-place="geet" style="--i: 1">
+              <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-geet">
+                <span class="chip-logo"><img src="assets/logos/geet.svg" alt="GEET Nonprofit" /></span>
+                <span class="chip-label">Founder</span>
+              </button>
+              <div class="exp-pop" id="exp-geet" role="region" aria-label="GEET Nonprofit">
+                <div class="exp-clip">
+                  <div class="exp-card">
+                    <button type="button" class="exp-close" aria-label="Close">&times;</button>
+                    <div>
+                      <p class="exp-org">GEET (Girls Empowerment through Education &amp; Transformation)</p>
+                      <p class="exp-role">Founder</p>
+                      <p class="exp-meta">India &middot; Jan 2023 &ndash; Present</p>
+                      <span class="exp-badge-note">500+ Girls Reached</span>
+                    </div>
+                    <div>
+                      <ul class="exp-bullets" style="margin-top: 0;">
+                        <li>Lead a nonprofit advancing girls' education in rural India, partnering with 10 grassroots NGOs across 15+ schools to support students into STEM careers.</li>
+                        <li>Secured over US$10,000 in corporate sponsorships to fund girls' education and career-readiness initiatives.</li>
+                        <li>Designed and built <a href="https://www.edugoals.ai" target="_blank" rel="noopener noreferrer">EduGoals.ai</a>, a custom learning platform using AI workflows to deliver academic lessons to 500+ high school girls.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="awards-inline">
-          <div class="award-pill"><img src="assets/logos/bcm.png" alt="BeChangeMaker" class="award-logo" /><span>HP UNESCO BeChangeMaker, Top 5</span></div>
-          <div class="award-pill"><img src="assets/logos/worldbank.svg" alt="World Bank" class="award-logo" /><span>World Bank Youth Summit, Lightning Talk Pitch</span></div>
-          <div class="award-pill"><img src="assets/logos/sif.webp" alt="SIF" class="award-logo" /><span>SIF YSE Singapore, Top 6</span></div>
-          <div class="award-pill"><img src="assets/logos/mckinsey.svg" alt="McKinsey" class="award-logo" /><span>McKinsey Next Gen Women Leaders, Awardee</span></div>
+            <div class="logo-chip" data-place="edugoals" style="--i: 2">
+              <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-edugoals">
+                <span class="chip-logo"><img src="assets/logos/edugoals.svg" alt="EDUGoals" /></span>
+                <span class="chip-label">Founder</span>
+              </button>
+              <div class="exp-pop" id="exp-edugoals" role="region" aria-label="EDUGoals">
+                <div class="exp-clip">
+                  <div class="exp-card">
+                    <button type="button" class="exp-close" aria-label="Close">&times;</button>
+                    <div>
+                      <p class="exp-org">EDUGoals</p>
+                      <p class="exp-role">Founder</p>
+                      <p class="exp-meta">India &middot; Aug 2020 &ndash; Jul 2023</p>
+                      <span class="exp-badge-note">1,000+ Students Guided</span>
+                    </div>
+                    <div>
+                      <ul class="exp-bullets" style="margin-top: 0;">
+                        <li>Founded and scaled an education consulting and career counseling venture, guiding 1,000+ students through mentoring and global admissions into 30+ top universities including NYU, Brown, Purdue, and LSE.</li>
+                        <li>Built a community of 1,500+ students and parents by hosting weekly webinars for over a year through <a href="https://www.youtube.com/playlist?list=PLHCgxdeYh8mGq0u-07dSfwfTYwrtmv_bL" target="_blank" rel="noopener noreferrer"><em>EDUSeries</em> on YouTube</a>.</li>
+                        <li>Delivered leadership talks at IIT and IIM institutes across India.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================
-         WAVE TRANSITION
+         EDUCATION
          ============================ -->
-    <div class="wave-transition" aria-hidden="true">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z" fill="rgba(10,30,34,0.15)"/></svg>
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,80 C320,35 640,95 960,50 C1120,28 1320,75 1440,55 L1440,120 L0,120 Z" fill="rgba(10,30,34,0.4)"/></svg>
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,85 C180,105 420,40 720,75 C1020,110 1300,50 1440,80 L1440,120 L0,120 Z" fill="#0A1E22"/></svg>
-    </div>
+    <section class="home-section" id="education">
+      <div class="section-head reveal">
+        <h2 class="section-heading">Education</h2>
+      </div>
 
-    <!-- ============================
-         SCREEN 3 — THE WAVE
-         ============================ -->
-    <section class="screen screen-3" id="book">
-      <div class="wave-orb wave-orb-1"></div>
-      <div class="wave-orb wave-orb-2"></div>
-      <div class="wave-orb wave-orb-3"></div>
+      <div class="exp-groups">
+        <div class="exp-group reveal">
+          <p class="group-label">Degrees</p>
+          <div class="logo-row cols-3">
 
-      <div class="container s3-content">
-        <div class="s3-header">
-          <div class="label label-light">Work With Me</div>
-          <h2 class="s3-headline">Your next chapter, made clearer.</h2>
-          <div class="s3-audience">
-            <span class="s3-tag">Students</span>
-            <span class="s3-tag">First-jobbers</span>
-            <span class="s3-tag">Career switchers</span>
-            <span class="s3-tag">Young professionals</span>
+            <div class="logo-chip" data-place="ntu" style="--i: 3">
+              <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-ntu">
+                <span class="chip-logo"><img src="assets/logos/ntu.svg" alt="Nanyang Technological University" /></span>
+                <span class="chip-label">MSc Technopreneurship</span>
+              </button>
+              <div class="exp-pop" id="exp-ntu" role="region" aria-label="Nanyang Technological University">
+                <div class="exp-clip">
+                  <div class="exp-card">
+                    <button type="button" class="exp-close" aria-label="Close">&times;</button>
+                    <div>
+                      <p class="exp-org">Nanyang Technological University (NTU)</p>
+                      <p class="exp-role">MSc in Technopreneurship &amp; Innovation</p>
+                      <p class="exp-meta">Singapore &middot; 2019 &ndash; 2020</p>
+                      <span class="exp-badge-note">S$30,000 Study Award</span>
+                    </div>
+                    <div>
+                      <p class="exp-summary">Graduate studies in venture building, technology commercialization, and innovation ecosystems in Singapore, awarded a S$30,000 Study Award.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="logo-chip" data-place="nyu" style="--i: 4">
+              <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-nyu">
+                <span class="chip-logo"><img src="assets/logos/nyu.svg" alt="New York University Stern" /></span>
+                <span class="chip-label">NYU Stern Exchange</span>
+              </button>
+              <div class="exp-pop" id="exp-nyu" role="region" aria-label="New York University Stern School of Business">
+                <div class="exp-clip">
+                  <div class="exp-card">
+                    <button type="button" class="exp-close" aria-label="Close">&times;</button>
+                    <div>
+                      <p class="exp-org">New York University</p>
+                      <p class="exp-role">Academic Exchange Student, Stern School of Business</p>
+                      <p class="exp-meta">New York, USA &middot; 2016 &ndash; 2017</p>
+                    </div>
+                    <div>
+                      <p class="exp-summary">Completed a year-long academic exchange at NYU Stern in New York City.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="logo-chip" data-place="nagoya" style="--i: 5">
+              <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-nagoya">
+                <span class="chip-logo"><img src="assets/logos/nagoya.svg" alt="Nagoya University" /></span>
+                <span class="chip-label">BSc Economics</span>
+              </button>
+              <div class="exp-pop" id="exp-nagoya" role="region" aria-label="Nagoya University">
+                <div class="exp-clip">
+                  <div class="exp-card">
+                    <button type="button" class="exp-close" aria-label="Close">&times;</button>
+                    <div>
+                      <p class="exp-org">Nagoya University</p>
+                      <p class="exp-role">BSc in Economics &amp; Business Administration</p>
+                      <p class="exp-meta">Nagoya, Japan &middot; 2014 &ndash; 2018</p>
+                      <span class="exp-badge-note">Graduated Top of Class</span>
+                    </div>
+                    <div>
+                      <p class="exp-summary">Undergraduate degree in Economics and Business Administration in Nagoya, Japan, graduating top of class.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="s3-offer-card">
-          <h3 class="s3-offer-title">Free 30-minute session</h3>
-          <p class="s3-offer-desc">A real conversation about where you are and where you want to go.</p>
-          <ul class="s3-benefits">
-            <li>A personalized roadmap for your next career move</li>
-            <li>Practical guidance on building skills that stay relevant in a changing job market</li>
-            <li>Confidence to take your next step with clarity, not anxiety</li>
-          </ul>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqsI1JNlawFv8chNrwUb2-8ptihV5TGGa5RCyUJogeMoAKBw/viewform?usp=header" target="_blank" rel="noopener" class="wave-cta">Book a free session <span class="wave-cta-arrow">&rarr;</span></a>
+    <!-- ============================
+         RECOGNITION (3 KEY HONORS)
+         ============================ -->
+    <section class="home-section" id="recognition">
+      <div class="section-head reveal">
+        <h2 class="section-heading">Recognition</h2>
+      </div>
+
+      <div class="exp-groups">
+        <div class="exp-group reveal">
+          <p class="group-label">Honors</p>
+          <div class="logo-row cols-3">
+
+            <div class="logo-chip" data-place="mckinsey" style="--i: 6">
+              <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-mckinsey">
+                <span class="chip-logo"><img src="assets/logos/mckinsey.svg" alt="McKinsey Next Generation Women Leaders" /></span>
+                <span class="chip-label">NGWL Awardee</span>
+              </button>
+              <div class="exp-pop" id="exp-mckinsey" role="region" aria-label="McKinsey Next Generation Women Leaders">
+                <div class="exp-clip">
+                  <div class="exp-card">
+                    <button type="button" class="exp-close" aria-label="Close">&times;</button>
+                    <div>
+                      <p class="exp-org">McKinsey Next Generation Women Leaders (NGWL)</p>
+                      <p class="exp-role">Awardee</p>
+                      <p class="exp-meta">January 2020</p>
+                    </div>
+                    <div>
+                      <p class="exp-summary">Selected as an awardee for distinguished leadership and academic credentials.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="logo-chip" data-place="bcm" style="--i: 7">
+              <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-bcm">
+                <span class="chip-logo"><img src="assets/logos/bcm.png" alt="HP UNESCO BeChangeMaker" /></span>
+                <span class="chip-label">BeChangeMaker Top 5</span>
+              </button>
+              <div class="exp-pop" id="exp-bcm" role="region" aria-label="HP UNESCO BeChangeMaker">
+                <div class="exp-clip">
+                  <div class="exp-card">
+                    <button type="button" class="exp-close" aria-label="Close">&times;</button>
+                    <div>
+                      <p class="exp-org">HP, UNESCO &amp; WorldSkills BeChangeMaker</p>
+                      <p class="exp-role">Global Top 5 Finalist</p>
+                      <p class="exp-meta">October 2025</p>
+                    </div>
+                    <div>
+                      <p class="exp-summary">EduGoals.ai was selected among the Top 5 teams globally out of 1,000+ applicants across 117 countries.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="logo-chip" data-place="worldbank" style="--i: 8">
+              <button type="button" class="chip-trigger" aria-expanded="false" aria-controls="exp-worldbank">
+                <span class="chip-logo"><img src="assets/logos/worldbank.svg" alt="World Bank Youth Summit" /></span>
+                <span class="chip-label">Lightning Talk</span>
+              </button>
+              <div class="exp-pop" id="exp-worldbank" role="region" aria-label="World Bank Youth Summit">
+                <div class="exp-clip">
+                  <div class="exp-card">
+                    <button type="button" class="exp-close" aria-label="Close">&times;</button>
+                    <div>
+                      <p class="exp-org">World Bank Youth Summit</p>
+                      <p class="exp-role">Delegate &amp; Lightning Talk Speaker</p>
+                      <p class="exp-meta">Washington, DC &middot; May 2025</p>
+                    </div>
+                    <div>
+                      <p class="exp-summary">Delivered a Lightning Talk on GEET to 200 global delegates and World Bank and IFC executives.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-speaking">
-        <p class="footer-speaking-intro">Reach out to me on <a href="mailto:praachij@gmail.com" class="footer-email-link">praachij@gmail.com</a> to host a workshop or a webinar on the following themes</p>
-        <div class="speaking-topics">
-          <span class="speaking-topic">Career Reinvention in the AI Era</span>
-          <span class="speaking-topic">Empowering Students for an AI-First World</span>
-          <span class="speaking-topic">Future-Proofing Your Workforce</span>
-        </div>
-      </div>
-      <div class="footer-contact">
-        <div class="footer-contact-inner">
-          <a href="https://www.linkedin.com/in/praachijain/" target="_blank" class="footer-social-link">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://www.youtube.com/@praachijainmehta" target="_blank" class="footer-social-link">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            YouTube
-          </a>
-          <a href="mailto:praachij@gmail.com" class="footer-social-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            praachij@gmail.com
-          </a>
-          <span class="footer-copy">&copy; 2026 Praachi Jain Mehta</span>
-        </div>
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-quote">&copy; 2026 Praachi Jain Mehta</span>
+      <span class="footer-links">
+        <a href="mailto:praachij@gmail.com" title="Email" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/praachijain/" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@praachijainmehta" title="YouTube" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </span>
     </div>
   </footer>
 

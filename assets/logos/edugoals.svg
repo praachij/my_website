@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 44" fill="none">
+  <rect x="2" y="6" width="32" height="32" rx="8" fill="#002d72"/>
+  <path d="M18 13L9 17.8L18 22.6L27 17.8L18 13Z" fill="#f8f5ee"/>
+  <path d="M12.5 21.2V26.2C12.5 27.9 15 29.5 18 29.5C21 29.5 23.5 27.9 23.5 26.2V21.2L18 24.2L12.5 21.2Z" fill="#68ace5"/>
+  <text x="43" y="29" font-family="Bricolage Grotesque, system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#0f1c33">EDU<tspan fill="#1a55b4">Goals</tspan></text>
+</svg>
